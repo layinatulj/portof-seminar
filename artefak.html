@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id" data-page="artefak">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artefak Pembelajaran | Portofolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="navbar-placeholder"></div>
+
+    <main class="container fade-in-section page-padding">
+
+    <h2 class="page-title">Artefak Pembelajaran</h2>
+
+    <p class="landing-text">
+        Seluruh artefak berikut merupakan dokumentasi proses pembelajaran selama mengikuti perkuliahan.
+        Pilih salah satu mata kuliah untuk melihat ringkasan materi, hasil belajar, refleksi, serta lembar kerja pada setiap topik.
+    </p>
+
+    <section class="artefak-menu">
+
+        <a href="ct.html" class="menu-card">
+            <div class="menu-number">01</div>
+            <h3>Computational Thinking</h3>
+            <span>Topik 1</span>
+        </a>
+
+        <a href="fp.html" class="menu-card">
+            <div class="menu-number">02</div>
+            <h3>Filosofi Pendidikan</h3>
+            <span>Topik 2</span>
+        </a>
+
+        <a href="gm.html" class="menu-card">
+            <div class="menu-number">03</div>
+            <h3>Growth Mindset</h3>
+            <span>Topik 3</span>
+        </a>
+
+        <a href="#topik4" class="menu-card">
+            <div class="menu-number">04</div>
+            <h3>CT dalam Kurikulum</h3>
+            <span>Topik 4</span>
+        </a>
+
+        <a href="#topik5" class="menu-card">
+            <div class="menu-number">05</div>
+            <h3>CT dan Projek</h3>
+            <span>Topik 5</span>
+        </a>
+
+        <a href="#topik6" class="menu-card">
+            <div class="menu-number">06</div>
+            <h3>Integrasi CT</h3>
+            <span>Topik 6</span>
+        </a>
+
+        <a href="#topik7" class="menu-card">
+            <div class="menu-number">07</div>
+            <h3>Implementasi CT</h3>
+            <span>Topik 7</span>
+        </a>
+
+        <a href="#topik8" class="menu-card">
+            <div class="menu-number">08</div>
+            <h3>Refleksi Akhir</h3>
+            <span>Topik 8</span>
+        </a>
+
+    </section>
+
+    <div class="accordion-container">
+
+
+    <!-- Modal PDF -->
+    <div id="pdfModal" class="pdf-modal">
+        <div class="pdf-container">
+
+            <button class="close-btn" onclick="closePDF()">
+                ✖ Close
+            </button>
+
+            <iframe
+                id="pdfFrame"
+                frameborder="0">
+            </iframe>
+
+        </div>
+    </div>
+
+
+    <div id="footer-placeholder"></div>
+
+    <button id="back-to-top">
+        &#8593;
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
