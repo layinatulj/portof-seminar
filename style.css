@@ -670,3 +670,417 @@ grid-template-columns:1fr;
 }
 
 }
+/* ======================================================
+   HEADER ARTEFAK
+====================================================== */
+
+.artefak-header{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 70px;
+}
+
+.section-badge{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:999px;
+    background:#DBEAFE;
+    color:#2563EB;
+    font-size:.78rem;
+    font-weight:700;
+    letter-spacing:.08em;
+    margin-bottom:18px;
+}
+
+.page-title{
+    font-size:clamp(2.2rem,4vw,3.2rem);
+    font-weight:700;
+    margin-bottom:18px;
+    color:var(--text-color);
+}
+
+.landing-text{
+    color:var(--text-muted);
+    line-height:1.8;
+    font-size:1rem;
+}
+
+
+/* ======================================================
+   SECTION SEMESTER
+====================================================== */
+
+.semester-section{
+    margin-bottom:60px;
+    padding:36px;
+    border-radius:28px;
+    background:var(--card-bg);
+    backdrop-filter:blur(14px);
+    border:1px solid var(--card-border);
+    box-shadow:var(--shadow);
+}
+
+.semester-heading{
+    display:flex;
+    align-items:end;
+    gap:24px;
+    margin-bottom:30px;
+}
+
+.semester-heading>div:first-child{
+    min-width:260px;
+}
+
+.semester-label{
+    display:inline-block;
+    color:#2563EB;
+    font-size:.78rem;
+    font-weight:700;
+    letter-spacing:.12em;
+    margin-bottom:8px;
+}
+
+.semester-heading h2{
+    font-size:1.9rem;
+    margin:0 0 8px;
+    color:var(--text-color);
+}
+
+.semester-heading p{
+    margin:0;
+    color:var(--text-muted);
+    line-height:1.6;
+}
+
+.semester-line{
+    flex:1;
+    height:2px;
+    border-radius:999px;
+    background:linear-gradient(90deg,#2563EB,#93C5FD);
+}
+
+
+/* ======================================================
+   GRID
+====================================================== */
+
+.artefak-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:22px;
+}
+
+
+/* ======================================================
+   CARD
+====================================================== */
+
+.artefak-card{
+    text-decoration:none;
+    color:inherit;
+    background:rgba(255,255,255,.65);
+    border:1px solid rgba(226,232,240,.8);
+    border-radius:22px;
+    padding:22px;
+    position:relative;
+    overflow:hidden;
+    transition:.3s ease;
+}
+
+.artefak-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:4px;
+    background:linear-gradient(90deg,#2563EB,#60A5FA);
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:.3s;
+}
+
+.artefak-card:hover::before{
+    transform:scaleX(1);
+}
+
+.artefak-card:hover{
+    transform:translateY(-8px);
+    border-color:#93C5FD;
+    box-shadow:0 18px 35px rgba(37,99,235,.15);
+}
+
+
+/* ======================================================
+   CARD TOP
+====================================================== */
+
+.card-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:18px;
+}
+
+.card-number{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#2563EB,#1D4ED8);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    font-size:.95rem;
+}
+
+.card-topic{
+    font-size:.8rem;
+    color:#2563EB;
+    background:#EFF6FF;
+    padding:6px 12px;
+    border-radius:999px;
+    font-weight:600;
+}
+
+
+/* ======================================================
+   TEXT
+====================================================== */
+
+.artefak-card h3{
+    font-size:1.08rem;
+    line-height:1.4;
+    margin:0 0 10px;
+    color:var(--text-color);
+}
+
+.artefak-card p{
+    margin:0;
+    color:var(--text-muted);
+    font-size:.9rem;
+    line-height:1.7;
+}
+
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media(max-width:768px){
+
+    .semester-section{
+        padding:24px;
+        border-radius:22px;
+    }
+
+    .semester-heading{
+        flex-direction:column;
+        align-items:start;
+        gap:16px;
+    }
+
+    .semester-heading>div:first-child{
+        min-width:100%;
+    }
+
+    .semester-line{
+        width:100%;
+    }
+
+}
+
+
+/* ======================================================
+   DARK MODE
+====================================================== */
+
+[data-theme="dark"] .section-badge{
+    background:rgba(37,99,235,.18);
+    color:#93C5FD;
+}
+
+[data-theme="dark"] .semester-section{
+    background:rgba(30,41,59,.7);
+}
+
+[data-theme="dark"] .artefak-card{
+    background:rgba(15,23,42,.55);
+    border-color:rgba(255,255,255,.08);
+}
+
+[data-theme="dark"] .artefak-card:hover{
+    border-color:#3B82F6;
+    background:rgba(30,41,59,.9);
+}
+
+[data-theme="dark"] .card-topic{
+    background:rgba(37,99,235,.18);
+    color:#93C5FD;
+}
+/* =====================================================
+   REFLECTION PAGE
+===================================================== */
+
+.reflection-header{
+    text-align:center;
+    max-width:820px;
+    margin:0 auto 55px;
+}
+
+.reflection-badge{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:999px;
+    background:#DBEAFE;
+    color:#2563EB;
+    font-size:.78rem;
+    font-weight:700;
+    letter-spacing:.08em;
+    margin-bottom:18px;
+}
+
+/* Section */
+
+.reflection-wrapper{
+    background:var(--card-bg);
+    border:1px solid var(--card-border);
+    border-radius:26px;
+    padding:30px;
+    margin-bottom:42px;
+    box-shadow:var(--shadow);
+}
+
+.reflection-heading{
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    margin-bottom:26px;
+    padding-bottom:16px;
+    border-bottom:1px solid rgba(37,99,235,.15);
+}
+
+.reflection-heading span{
+    color:#2563EB;
+    font-size:.78rem;
+    font-weight:700;
+    letter-spacing:.1em;
+}
+
+.reflection-heading h2{
+    margin:6px 0 0;
+    color:var(--text-color);
+    font-size:1.75rem;
+}
+
+.reflection-heading p{
+    color:var(--text-muted);
+    font-weight:600;
+}
+
+/* Grid */
+
+.reflection-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:18px;
+}
+
+/* Card */
+
+.reflection-card{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    background:#fff;
+    border:1px solid rgba(226,232,240,.8);
+    border-radius:18px;
+    padding:20px;
+    cursor:pointer;
+    transition:.28s ease;
+}
+
+.reflection-card:hover{
+    transform:translateY(-6px);
+    border-color:#60A5FA;
+    box-shadow:0 15px 30px rgba(37,99,235,.12);
+}
+
+.reflection-number{
+    width:54px;
+    height:54px;
+    border-radius:16px;
+    background:linear-gradient(135deg,#2563EB,#1D4ED8);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1rem;
+    font-weight:700;
+    flex-shrink:0;
+}
+
+.reflection-content{
+    flex:1;
+}
+
+.reflection-content h3{
+    margin:0 0 8px;
+    color:#1F2937;
+    font-size:1.05rem;
+    line-height:1.4;
+}
+
+.reflection-content p{
+    margin:0 0 14px;
+    color:#64748B;
+    font-size:.9rem;
+    line-height:1.6;
+}
+
+.reflection-open{
+    color:#2563EB;
+    font-weight:600;
+    font-size:.86rem;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .reflection-wrapper{
+        padding:22px;
+    }
+
+    .reflection-heading{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+    }
+
+    .reflection-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* Dark Mode */
+
+[data-theme="dark"] .reflection-card{
+    background:rgba(30,41,59,.65);
+    border-color:rgba(255,255,255,.08);
+}
+
+[data-theme="dark"] .reflection-card:hover{
+    background:rgba(30,41,59,.95);
+    border-color:#3B82F6;
+}
+
+[data-theme="dark"] .reflection-content h3{
+    color:#F8FAFC;
+}
+
+[data-theme="dark"] .reflection-content p{
+    color:#CBD5E1;
+}

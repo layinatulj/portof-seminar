@@ -1,143 +1,578 @@
 <!DOCTYPE html>
 <html lang="id" data-page="refleksi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Jurnal Refleksi | Portofolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="loader"><div class="spinner"></div></div>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- NAVBAR -->
     <div id="navbar-placeholder"></div>
 
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
     <main class="container fade-in-section page-padding">
-        <h2 class="page-title">Refleksi Akademik</h2>
-        
-        <div style="display:flex; justify-content:center; width:100%;">
 
-            <div class="card glass" style="
-                width:100%;
-                max-width:900px;
-                padding:2rem;
-                margin:0 auto;
-            ">
 
-                <div style="text-align:center; margin-bottom:1.5rem;">
-                    <span class="timeline-date">Refleksi Pembelajaran</span>
+        <!-- =========================
+             HEADER
+        ========================== -->
 
-                    <h3 style="margin-top:1rem;">
-                        Refleksi Mata Kuliah
-                    </h3>
+        <section class="reflection-header">
+
+            <span class="reflection-badge">
+                JURNAL AKADEMIK
+            </span>
+
+            <h1 class="page-title">
+                Refleksi Akademik
+            </h1>
+
+            <p class="landing-text">
+                Kumpulan jurnal refleksi selama mengikuti proses perkuliahan
+                sebagai bentuk evaluasi diri, penguatan kompetensi, dan
+                pengembangan profesional.
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SEMESTER 1
+        ================================================== -->
+
+        <section class="reflection-wrapper">
+
+            <div class="reflection-heading">
+
+                <div>
+
+                    <span class="reflection-semester">
+                        SEMESTER GANJIL
+                    </span>
+
+                    <h2>
+                        Refleksi Semester 1
+                    </h2>
+
                 </div>
 
-                <section class="artefak-menu">
-
-                    <div class="menu-card"
-                        onclick="openPDF('https://docs.google.com/document/d/1y4McNpQkHhOgQxC8y4qf3xhizr6O0_UH/preview')">
-
-                        <div class="menu-number">01</div>
-                        <h3>Computational Thinking</h3>
-                        <span>Topik 1</span>
-
-                    </div>
-
-                    <div class="menu-card"
-                        onclick="openPDF('https://drive.google.com/file/d/1sxijkwhEwGF3pY6Bmn-_vpWdw_E5drXy/preview')">
-
-                        <div class="menu-number">02</div>
-                        <h3>Filosofi Pendidikan</h3>
-                        <span>Topik 2</span>
-
-                    </div>
-
-                    <div class="menu-card"
-                        onclick="openPDF('https://drive.google.com/file/d/1_j7xk9BTe-7_-ZxyYt8FNZmITipRPE5y/preview')">
-
-                        <div class="menu-number">03</div>
-                        <h3>Growth Mindset</h3>
-                        <span>Topik 3</span>
-
-                    </div>
-
-                    <div class="menu-card"
-                        onclick="openPDF('https://drive.google.com/file/d/1_qRHdhNAqltk2T96nydSDw33Ddm0JL9G/preview')">
-
-                        <div class="menu-number">04</div>
-                        <h3>Pemahaman tentang Peserta Didik dan Pembelajaran</h3>
-                        <span>Topik 4</span>
-
-                    </div>
-
-                    <div class="menu-card"
-                        onclick="openPDF('https://drive.google.com/file/d/1fRMyuEgSIZ1ThpuZdwWSCGUfPhq6Z4kg/preview')">
-
-                        <div class="menu-number">05</div>
-                        <h3>Pembelajaran Mendalam dan Asesmen Dasar</h3>
-                        <span>Topik 5</span>
-
-                    </div>
-
-                    <div class="menu-card"
-                        onclick="openPDF('https://drive.google.com/file/d/1mVwt90wP354dBYZdxLc10RLxL6pNQZLC/preview')">
-
-                        <div class="menu-number">06</div>
-                        <h3>PPL Terbimbing</h3>
-                        <span>Topik 6</span>
-
-                    </div>
-
-                    <div class="menu-card"
-                        onclick="openPDF('https://drive.google.com/file/d/FILE_ID_TOPIK7/preview')">
-
-                        <div class="menu-number">07</div>
-                        <h3>Implementasi CT</h3>
-                        <span>Topik 7</span>
-
-                    </div>
-
-                    <div class="menu-card"
-                        onclick="openPDF('https://drive.google.com/file/d/FILE_ID_TOPIK8/preview')">
-
-                        <div class="menu-number">08</div>
-                        <h3>Refleksi Akhir</h3>
-                        <span>Topik 8</span>
-
-                    </div>
-
-                </section>
-
-
-                <div style="text-align:justify; line-height:1.9;">
-
-                    <p>
-                        Setelah mempelajari seluruh rangkaian materi dan menyelesaikan berbagai lembar kerja mengenai Computational Thinking (CT), saya memahami bahwa CT bukan hanya berkaitan dengan pemrograman atau penggunaan komputer, tetapi merupakan cara berpikir logis, sistematis, dan terstruktur dalam menyelesaikan masalah. Melalui berbagai kegiatan diskusi, analisis soal, proyek STEM, hingga modifikasi materi ajar, saya belajar bahwa CT dapat diterapkan dalam berbagai situasi kehidupan sehari-hari maupun dalam proses pembelajaran di sekolah.
-                    </p>
-
-                    <p>
-                        Saya juga memahami pentingnya empat fondasi utama CT, yaitu dekomposisi, pengenalan pola, abstraksi, dan algoritma. Keempat fondasi tersebut membantu dalam memecah masalah yang kompleks menjadi lebih sederhana, menemukan hubungan atau pola, memilih informasi yang penting, serta menyusun langkah penyelesaian secara runtut. Dengan penerapan CT, proses pembelajaran menjadi lebih terarah dan tidak hanya berfokus pada hasil akhir, tetapi juga pada proses berpikir peserta didik.
-                    </p>
-
-                    <p>
-                        Selain itu, pembelajaran CT memberikan pengalaman baru dalam bekerja sama, berdiskusi, dan menyampaikan ide secara sistematis. Kegiatan proyek dan presentasi melatih kemampuan komunikasi, berpikir kritis, serta kemampuan mengevaluasi dan memperbaiki solusi berdasarkan masukan dari orang lain. Saya juga menyadari bahwa integrasi CT dalam pembelajaran dapat membuat siswa lebih aktif, kreatif, dan mampu memecahkan masalah secara mandiri.
-                    </p>
-
-                    <p>
-                        Secara keseluruhan, materi CT memberikan wawasan bahwa kemampuan berpikir komputasional sangat penting untuk diterapkan dalam dunia pendidikan maupun kehidupan sehari-hari. Sebagai calon pendidik, saya merasa CT dapat menjadi pendekatan pembelajaran yang efektif untuk membantu siswa mengembangkan keterampilan berpikir kritis, problem solving, dan pengambilan keputusan secara logis di era digital saat ini.
-                    </p>
-
+                <div class="reflection-count">
+                    6 Topik
                 </div>
 
             </div>
 
-        </div>
+
+            <div class="reflection-grid">
+
+
+                <!-- 01 -->
+                <div
+                    class="reflection-card"
+                    onclick="openPDF('https://docs.google.com/document/d/1y4McNpQkHhOgQxC8y4qf3xhizr6O0_UH/preview')"
+                >
+
+                    <div class="reflection-number">
+                        01
+                    </div>
+
+                    <div class="reflection-content">
+
+                        <span class="reflection-topic">
+                            TOPIK 1
+                        </span>
+
+                        <h3>
+                            Computational Thinking
+                        </h3>
+
+                        <p>
+                            Refleksi proses pembelajaran Computational Thinking
+                            dan pengalaman dalam memahami berpikir komputasional.
+                        </p>
+
+                        <span class="reflection-open">
+                            Buka Refleksi
+                            <span>→</span>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- 02 -->
+                <div
+                    class="reflection-card"
+                    onclick="openPDF('https://drive.google.com/file/d/1sxijkwhEwGF3pY6Bmn-_vpWdw_E5drXy/preview')"
+                >
+
+                    <div class="reflection-number">
+                        02
+                    </div>
+
+                    <div class="reflection-content">
+
+                        <span class="reflection-topic">
+                            TOPIK 2
+                        </span>
+
+                        <h3>
+                            Filosofi Pendidikan
+                        </h3>
+
+                        <p>
+                            Refleksi mengenai filosofi pendidikan serta pemikiran
+                            Ki Hadjar Dewantara dalam proses pembelajaran.
+                        </p>
+
+                        <span class="reflection-open">
+                            Buka Refleksi
+                            <span>→</span>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- 03 -->
+                <div
+                    class="reflection-card"
+                    onclick="openPDF('https://drive.google.com/file/d/1_j7xk9BTe-7_-ZxyYt8FNZmITipRPE5y/preview')"
+                >
+
+                    <div class="reflection-number">
+                        03
+                    </div>
+
+                    <div class="reflection-content">
+
+                        <span class="reflection-topic">
+                            TOPIK 3
+                        </span>
+
+                        <h3>
+                            Growth Mindset
+                        </h3>
+
+                        <p>
+                            Refleksi mengenai pola pikir bertumbuh dan penerapannya
+                            dalam proses belajar dan pengembangan diri.
+                        </p>
+
+                        <span class="reflection-open">
+                            Buka Refleksi
+                            <span>→</span>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- 04 -->
+                <div
+                    class="reflection-card"
+                    onclick="openPDF('https://drive.google.com/file/d/1_qRHdhNAqltk2T96nydSDw33Ddm0JL9G/preview')"
+                >
+
+                    <div class="reflection-number">
+                        04
+                    </div>
+
+                    <div class="reflection-content">
+
+                        <span class="reflection-topic">
+                            TOPIK 4
+                        </span>
+
+                        <h3>
+                            Pemahaman tentang Peserta Didik dan Pembelajaran
+                        </h3>
+
+                        <p>
+                            Refleksi mengenai karakteristik peserta didik dan
+                            penerapan pembelajaran yang sesuai dengan kebutuhan belajar.
+                        </p>
+
+                        <span class="reflection-open">
+                            Buka Refleksi
+                            <span>→</span>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- 05 -->
+                <div
+                    class="reflection-card"
+                    onclick="openPDF('https://drive.google.com/file/d/1fRMyuEgSIZ1ThpuZdwWSCGUfPhq6Z4kg/preview')"
+                >
+
+                    <div class="reflection-number">
+                        05
+                    </div>
+
+                    <div class="reflection-content">
+
+                        <span class="reflection-topic">
+                            TOPIK 5
+                        </span>
+
+                        <h3>
+                            Pembelajaran Mendalam dan Asesmen Dasar
+                        </h3>
+
+                        <p>
+                            Refleksi mengenai pembelajaran mendalam serta penerapan
+                            asesmen dalam mendukung proses belajar peserta didik.
+                        </p>
+
+                        <span class="reflection-open">
+                            Buka Refleksi
+                            <span>→</span>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- 06 -->
+                <div
+                    class="reflection-card"
+                    onclick="openPDF('https://drive.google.com/file/d/1mVwt90wP354dBYZdxLc10RLxL6pNQZLC/preview')"
+                >
+
+                    <div class="reflection-number">
+                        06
+                    </div>
+
+                    <div class="reflection-content">
+
+                        <span class="reflection-topic">
+                            TOPIK 6
+                        </span>
+
+                        <h3>
+                            PPL Terbimbing
+                        </h3>
+
+                        <p>
+                            Refleksi pengalaman praktik lapangan dan proses
+                            pembelajaran selama melaksanakan PPL Terbimbing.
+                        </p>
+
+                        <span class="reflection-open">
+                            Buka Refleksi
+                            <span>→</span>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SEMESTER 2
+        ================================================== -->
+
+        <section class="reflection-wrapper">
+
+            <div class="reflection-heading">
+
+                <div>
+
+                    <span class="reflection-semester">
+                        SEMESTER GENAP
+                    </span>
+
+                    <h2>
+                        Refleksi Semester 2
+                    </h2>
+
+                </div>
+
+                <div class="reflection-count">
+                    6 Topik
+                </div>
+
+            </div>
+
+
+            <div class="reflection-grid">
+
+
+                <!-- 01 -->
+                <div
+                    class="reflection-card"
+                    onclick="openPDF('https://docs.google.com/document/d/1y4McNpQkHhOgQxC8y4qf3xhizr6O0_UH/preview')"
+                >
+
+                    <div class="reflection-number">
+                        01
+                    </div>
+
+                    <div class="reflection-content">
+
+                        <span class="reflection-topic">
+                            TOPIK 1
+                        </span>
+
+                        <h3>
+                            Etika dan Profesionalisme Guru
+                        </h3>
+
+                        <p>
+                            Refleksi mengenai etika, tanggung jawab, dan profesionalisme
+                            guru dalam menjalankan peran sebagai pendidik.
+                        </p>
+
+                        <span class="reflection-open">
+                            Buka Refleksi
+                            <span>→</span>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- 02 -->
+                <div
+                    class="reflection-card"
+                    onclick="openPDF('https://drive.google.com/file/d/1sxijkwhEwGF3pY6Bmn-_vpWdw_E5drXy/preview')"
+                >
+
+                    <div class="reflection-number">
+                        02
+                    </div>
+
+                    <div class="reflection-content">
+
+                        <span class="reflection-topic">
+                            TOPIK 2
+                        </span>
+
+                        <h3>
+                            Filosofi Pendidikan
+                        </h3>
+
+                        <p>
+                            Refleksi pembelajaran dan pemahaman terhadap filosofi
+                            pendidikan dalam pengembangan kompetensi guru.
+                        </p>
+
+                        <span class="reflection-open">
+                            Buka Refleksi
+                            <span>→</span>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- 03 -->
+                <div
+                    class="reflection-card"
+                    onclick="openPDF('https://drive.google.com/file/d/1_j7xk9BTe-7_-ZxyYt8FNZmITipRPE5y/preview')"
+                >
+
+                    <div class="reflection-number">
+                        03
+                    </div>
+
+                    <div class="reflection-content">
+
+                        <span class="reflection-topic">
+                            TOPIK 3
+                        </span>
+
+                        <h3>
+                            Growth Mindset
+                        </h3>
+
+                        <p>
+                            Refleksi mengenai pengembangan pola pikir bertumbuh
+                            dalam proses pembelajaran dan pengembangan profesional.
+                        </p>
+
+                        <span class="reflection-open">
+                            Buka Refleksi
+                            <span>→</span>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- 04 -->
+                <div
+                    class="reflection-card"
+                    onclick="openPDF('https://drive.google.com/file/d/1_qRHdhNAqltk2T96nydSDw33Ddm0JL9G/preview')"
+                >
+
+                    <div class="reflection-number">
+                        04
+                    </div>
+
+                    <div class="reflection-content">
+
+                        <span class="reflection-topic">
+                            TOPIK 4
+                        </span>
+
+                        <h3>
+                            Pemahaman tentang Peserta Didik dan Pembelajaran
+                        </h3>
+
+                        <p>
+                            Refleksi mengenai pemahaman peserta didik dan penerapan
+                            strategi pembelajaran berdasarkan kebutuhan belajar.
+                        </p>
+
+                        <span class="reflection-open">
+                            Buka Refleksi
+                            <span>→</span>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- 05 -->
+                <div
+                    class="reflection-card"
+                    onclick="openPDF('https://drive.google.com/file/d/1fRMyuEgSIZ1ThpuZdwWSCGUfPhq6Z4kg/preview')"
+                >
+
+                    <div class="reflection-number">
+                        05
+                    </div>
+
+                    <div class="reflection-content">
+
+                        <span class="reflection-topic">
+                            TOPIK 5
+                        </span>
+
+                        <h3>
+                            Pembelajaran Mendalam dan Asesmen Dasar
+                        </h3>
+
+                        <p>
+                            Refleksi mengenai pembelajaran mendalam, asesmen,
+                            dan penerapannya dalam proses pembelajaran.
+                        </p>
+
+                        <span class="reflection-open">
+                            Buka Refleksi
+                            <span>→</span>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- 06 -->
+                <div
+                    class="reflection-card"
+                    onclick="openPDF('https://drive.google.com/file/d/1mVwt90wP354dBYZdxLc10RLxL6pNQZLC/preview')"
+                >
+
+                    <div class="reflection-number">
+                        06
+                    </div>
+
+                    <div class="reflection-content">
+
+                        <span class="reflection-topic">
+                            TOPIK 6
+                        </span>
+
+                        <h3>
+                            PPL Terbimbing
+                        </h3>
+
+                        <p>
+                            Refleksi pengalaman praktik lapangan, pelaksanaan
+                            pembelajaran, dan pengembangan kompetensi mengajar.
+                        </p>
+
+                        <span class="reflection-open">
+                            Buka Refleksi
+                            <span>→</span>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
 
     </main>
 
+
+
+    <!-- =====================================================
+         PDF MODAL
+    ====================================================== -->
+
     <div id="pdfModal" class="pdf-modal">
+
         <div class="pdf-container">
 
-            <button class="close-btn" onclick="closePDF()">
+            <button
+                class="close-btn"
+                onclick="closePDF()"
+            >
                 ✖ Close
             </button>
 
@@ -147,10 +582,26 @@
             </iframe>
 
         </div>
+
     </div>
 
+
+
+    <!-- FOOTER -->
+
     <div id="footer-placeholder"></div>
-    <button id="back-to-top">&#8593;</button>
+
+
+    <!-- BACK TO TOP -->
+
+    <button id="back-to-top">
+        &#8593;
+    </button>
+
+
+    <!-- SCRIPT -->
+
     <script src="script.js"></script>
+
 </body>
 </html>
