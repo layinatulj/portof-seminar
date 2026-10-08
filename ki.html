@@ -1,294 +1,1847 @@
 <!DOCTYPE html>
 <html lang="id" data-page="karyainovasi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Infografis Kreatif | Portofolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+    <style>
+
+        /* =====================================================
+           LATAR BELAKANG PENGEMBANGAN MEDIA
+        ===================================================== */
+
+        .innovation-section {
+            margin-top: 50px;
+        }
+
+        .innovation-intro {
+            max-width: 760px;
+            margin: 0 auto 32px;
+            text-align: center;
+            line-height: 1.8;
+            opacity: .75;
+        }
+
+
+        /* =====================================================
+           CARD UTAMA
+        ===================================================== */
+
+        .innovation-card {
+            padding: 26px;
+            border-radius: 22px;
+            border: 1px solid rgba(37, 99, 235, .12);
+            overflow: hidden;
+
+            transition:
+                transform .3s ease,
+                box-shadow .3s ease,
+                border-color .3s ease;
+        }
+
+        .innovation-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(37, 99, 235, .3);
+            box-shadow:
+                0 18px 40px rgba(37, 99, 235, .10);
+        }
+
+
+        /* =====================================================
+           HEADER CARD
+        ===================================================== */
+
+        .innovation-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 24px;
+        }
+
+        .innovation-header h3 {
+            margin: 2px 0 0;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+
+        .innovation-label {
+            display: block;
+            font-size: .68rem;
+            font-weight: 700;
+            letter-spacing: .12em;
+            color: #64748B;
+            margin-bottom: 3px;
+        }
+
+
+        /* =====================================================
+           ICON
+        ===================================================== */
+
+        .innovation-icon {
+            width: 50px;
+            height: 50px;
+            flex-shrink: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 15px;
+            font-size: 20px;
+        }
+
+
+        /* =====================================================
+           PERMASALAHAN
+        ===================================================== */
+
+        .problem-card {
+            border-top: 4px solid #EF4444;
+        }
+
+        .problem-icon {
+            background: #FEF2F2;
+            color: #EF4444;
+        }
+
+        .problem-number {
+            background: #FEF2F2;
+            color: #DC2626;
+        }
+
+        .innovation-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .innovation-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            padding: 13px 14px;
+
+            border-radius: 14px;
+            background: rgba(248, 250, 252, .8);
+            border: 1px solid #E2E8F0;
+        }
+
+        .innovation-item p {
+            margin: 0;
+            font-size: .88rem;
+            line-height: 1.55;
+        }
+
+        .item-number {
+            width: 31px;
+            height: 31px;
+            flex-shrink: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 9px;
+
+            font-size: .68rem;
+            font-weight: 700;
+        }
+
+
+        /* =====================================================
+           INOVASI
+        ===================================================== */
+
+        .innovation-main {
+            border-top: 4px solid #F59E0B;
+        }
+
+        .innovation-icon-main {
+            background: #FFFBEB;
+            color: #D97706;
+        }
+
+        .innovation-highlight {
+            display: flex;
+            gap: 14px;
+
+            padding: 18px;
+
+            background: #FFFBEB;
+            border: 1px solid #FEF3C7;
+            border-radius: 16px;
+        }
+
+        .innovation-mini-icon {
+            width: 38px;
+            height: 38px;
+            flex-shrink: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 11px;
+            background: white;
+            color: #D97706;
+        }
+
+        .innovation-highlight strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #92400E;
+        }
+
+        .innovation-highlight p {
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        .innovation-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .innovation-tags span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+
+            padding: 7px 11px;
+            border-radius: 999px;
+
+            background: #EFF6FF;
+            color: #1D4ED8;
+
+            font-size: .72rem;
+            font-weight: 600;
+        }
+
+
+        /* =====================================================
+           HASIL
+        ===================================================== */
+
+        .result-card {
+            border-top: 4px solid #10B981;
+        }
+
+        .result-icon {
+            background: #ECFDF5;
+            color: #059669;
+        }
+
+        .result-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 15px;
+        }
+
+        .result-box {
+            padding: 18px;
+
+            border-radius: 17px;
+            border: 1px solid #E2E8F0;
+            background: rgba(248, 250, 252, .65);
+        }
+
+        .result-box-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .result-number {
+            width: 28px;
+            height: 28px;
+            flex-shrink: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 8px;
+
+            background: #DBEAFE;
+            color: #1D4ED8;
+
+            font-size: .68rem;
+            font-weight: 700;
+        }
+
+        .result-box h4 {
+            margin: 2px 0 0;
+
+            font-size: .92rem;
+            line-height: 1.45;
+
+            color: var(--text-color);
+        }
+
+        .result-box p {
+            margin: 0;
+
+            font-size: .82rem;
+            line-height: 1.7;
+        }
+
+        .result-stat {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+
+            margin-top: 12px;
+            padding: 7px 10px;
+
+            border-radius: 8px;
+
+            background: #EFF6FF;
+            color: #2563EB;
+
+            font-size: .72rem;
+        }
+
+
+        /* =====================================================
+           PERBANDINGAN NILAI
+        ===================================================== */
+
+        .score-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .score-comparison > div {
+            padding: 12px;
+            border-radius: 12px;
+            background: #EFF6FF;
+        }
+
+        .score-comparison span,
+        .score-comparison small {
+            display: block;
+            color: #64748B;
+        }
+
+        .score-comparison span {
+            font-size: .68rem;
+            font-weight: 600;
+        }
+
+        .score-comparison strong {
+            display: block;
+            margin: 3px 0;
+
+            font-size: 1.45rem;
+            color: #2563EB;
+        }
+
+        .score-comparison small {
+            font-size: .65rem;
+        }
+
+
+        /* =====================================================
+           RANKING
+        ===================================================== */
+
+        .ranking-box {
+            margin-top: 16px;
+            padding: 18px;
+
+            border-radius: 17px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #EFF6FF,
+                    #F8FAFC
+                );
+
+            border: 1px solid #DBEAFE;
+        }
+
+        .ranking-title {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+
+            color: #1D4ED8;
+            margin-bottom: 13px;
+        }
+
+        .ranking-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .ranking-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            padding: 11px;
+
+            background: white;
+            border-radius: 12px;
+        }
+
+        .ranking-item > span {
+            width: 27px;
+            height: 27px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 8px;
+
+            background: #DBEAFE;
+            color: #1D4ED8;
+
+            font-size: .68rem;
+            font-weight: 700;
+        }
+
+        .ranking-item div {
+            flex: 1;
+        }
+
+        .ranking-item strong,
+        .ranking-item small {
+            display: block;
+        }
+
+        .ranking-item strong {
+            font-size: .78rem;
+        }
+
+        .ranking-item small {
+            margin-top: 2px;
+            font-size: .65rem;
+            color: #64748B;
+        }
+
+        .ranking-item b {
+            color: #2563EB;
+            font-size: 1rem;
+        }
+
+        .ranking-description {
+            margin: 13px 0 0;
+
+            font-size: .78rem;
+            line-height: 1.7;
+            color: #64748B;
+        }
+
+
+        /* =====================================================
+           EFFECT SIZE
+        ===================================================== */
+
+        .effect-box {
+            display: flex;
+            gap: 13px;
+
+            margin-top: 15px;
+            padding: 15px;
+
+            border-radius: 15px;
+
+            background: #F8FAFC;
+            border: 1px solid #E2E8F0;
+        }
+
+        .effect-icon {
+            width: 38px;
+            height: 38px;
+            flex-shrink: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 10px;
+
+            background: #DBEAFE;
+            color: #2563EB;
+        }
+
+        .effect-content strong {
+            font-size: .82rem;
+        }
+
+        .effect-content p {
+            margin: 4px 0 0;
+
+            font-size: .77rem;
+            line-height: 1.65;
+            color: #64748B;
+        }
+
+
+        /* =====================================================
+           TINDAK LANJUT
+        ===================================================== */
+
+        .followup-card {
+            border-top: 4px solid #2563EB;
+        }
+
+        .followup-icon {
+            background: #EFF6FF;
+            color: #2563EB;
+        }
+
+        .followup-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 13px;
+        }
+
+        .followup-item {
+            display: flex;
+            gap: 11px;
+
+            padding: 15px;
+
+            border-radius: 15px;
+
+            background: #F8FAFC;
+            border: 1px solid #E2E8F0;
+        }
+
+        .followup-item > span {
+            width: 29px;
+            height: 29px;
+            flex-shrink: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 9px;
+
+            background: #DBEAFE;
+            color: #1D4ED8;
+
+            font-size: .68rem;
+            font-weight: 700;
+        }
+
+        .followup-item strong {
+            font-size: .8rem;
+        }
+
+        .followup-item p {
+            margin: 4px 0 0;
+
+            font-size: .74rem;
+            line-height: 1.6;
+            color: #64748B;
+        }
+
+
+        /* =====================================================
+           MISI DETEKTIF DATA
+        ===================================================== */
+
+        .mission-card {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            flex-wrap: wrap;
+
+            margin-bottom: 25px;
+            padding: 24px;
+
+            border-radius: 22px;
+        }
+
+        .mission-card img {
+            width: 280px;
+            max-width: 100%;
+            border-radius: 18px;
+            display: block;
+        }
+
+        .mission-content {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .mission-level {
+            display: inline-block;
+
+            padding: 6px 14px;
+            border-radius: 999px;
+
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .mission-content h3 {
+            margin: 14px 0;
+        }
+
+        .mission-content p {
+            line-height: 1.8;
+            margin: 0;
+        }
+
+
+        /* =====================================================
+           DARK MODE
+        ===================================================== */
+
+        [data-theme="dark"] .innovation-item,
+        [data-theme="dark"] .result-box,
+        [data-theme="dark"] .followup-item,
+        [data-theme="dark"] .effect-box {
+            background: rgba(15, 23, 42, .55);
+            border-color: rgba(255,255,255,.08);
+        }
+
+        [data-theme="dark"] .innovation-highlight {
+            background: rgba(120, 53, 15, .15);
+            border-color: rgba(245, 158, 11, .2);
+        }
+
+        [data-theme="dark"] .innovation-highlight strong {
+            color: #FBBF24;
+        }
+
+        [data-theme="dark"] .ranking-box {
+            background: rgba(30, 64, 175, .12);
+            border-color: rgba(59, 130, 246, .2);
+        }
+
+        [data-theme="dark"] .ranking-item {
+            background: rgba(15, 23, 42, .7);
+        }
+
+        [data-theme="dark"] .score-comparison > div {
+            background: rgba(37, 99, 235, .12);
+        }
+
+        [data-theme="dark"] .innovation-label,
+        [data-theme="dark"] .ranking-description,
+        [data-theme="dark"] .effect-content p,
+        [data-theme="dark"] .followup-item p {
+            color: #94A3B8;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media (max-width: 900px) {
+
+            .result-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .followup-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .ranking-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .innovation-top-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .innovation-card {
+                padding: 20px;
+                border-radius: 18px;
+            }
+
+            .innovation-header {
+                margin-bottom: 18px;
+            }
+
+            .innovation-icon {
+                width: 44px;
+                height: 44px;
+                border-radius: 13px;
+            }
+
+            .score-comparison {
+                grid-template-columns: 1fr;
+            }
+
+            .mission-card {
+                padding: 18px;
+                gap: 18px;
+            }
+
+            .mission-card img {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
 </head>
+
+
 <body>
-    <div id="loader"><div class="spinner"></div></div>
+
+    <!-- =========================================
+         LOADER
+    ========================================== -->
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
     <div id="navbar-placeholder"></div>
+
+
+    <!-- =========================================
+         MAIN
+    ========================================== -->
 
     <main class="container fade-in-section page-padding">
 
-    <!-- HERO -->
-    <section class="card glass" style="
-        padding:40px;
-        border-radius:28px;
-        background:linear-gradient(135deg,#1E40AF,#2563EB);
-        color:white;
-        overflow:hidden;
-        position:relative;
-    ">
-        <div style="position:absolute;right:-40px;top:-30px;font-size:120px;opacity:.08;">🕵️</div>
 
-        <span style="
-            display:inline-block;
-            background:rgba(255,255,255,.18);
-            padding:8px 18px;
-            border-radius:999px;
-            font-size:14px;
-            margin-bottom:18px;
-        ">
-            Media Pembelajaran Berbasis Gamifikasi
-        </span>
+        <!-- =====================================
+             HERO
+        ====================================== -->
 
-        <h1 style="font-size:2.2rem;margin-bottom:14px;line-height:1.3;">
-            DETEKTIF DATA
-            <br>Kasus Nilai Misterius
-        </h1>
+        <section class="card glass"
+            style="
+                padding:40px;
+                border-radius:28px;
+                background:linear-gradient(135deg,#1E40AF,#2563EB);
+                color:white;
+                overflow:hidden;
+                position:relative;
+            ">
 
-        <p style="max-width:700px;line-height:1.8;opacity:.95;">
-            Sebuah media pembelajaran gamifikasi untuk materi Microsoft Excel yang mengajak siswa
-            menjadi tim detektif dalam menemukan kesalahan data menggunakan fungsi
-            <b>SUM</b>, <b>AVERAGE</b>, <b>SORTING</b>, dan <b>FILTERING</b>.
-        </p>
-    </section>
-
-
-    <!-- EMPAT KOMPONEN -->
-    <section style="margin-top:40px;">
-        <h2 class="page-title" style="text-align:center;margin-bottom:28px;">
-            Latar Belakang Pengembangan Media
-        </h2>
-
-        <div style="
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-            gap:20px;
-        ">
-
-            <!-- Permasalahan -->
-            <div class="card glass" style="padding:24px;border-top:6px solid #EF4444;">
-                <div style="font-size:36px;">🚨</div>
-                <h3 style="margin:12px 0;color:#EF4444;">Permasalahan</h3>
-                <ul style="padding-left:18px;line-height:1.8;">
-                    <li>Siswa masih pasif saat belajar Excel.</li>
-                    <li>Pembelajaran didominasi ceramah.</li>
-                    <li>Sulit menganalisis kesalahan data.</li>
-                    <li>Hasil belajar belum optimal.</li>
-                </ul>
+            <div style="
+                position:absolute;
+                right:-40px;
+                top:-30px;
+                font-size:120px;
+                opacity:.08;
+            ">
+                🕵️
             </div>
 
-            <!-- Inovasi -->
-            <div class="card glass" style="padding:24px;border-top:6px solid #F59E0B;">
-                <div style="font-size:36px;">💡</div>
-                <h3 style="margin:12px 0;color:#D97706;">Inovasi</h3>
-                <p style="line-height:1.8;">
-                    Mengembangkan media pembelajaran berbasis gamifikasi
-                    <b>Detektif Data</b> yang menghadirkan studi kasus manipulasi nilai
-                    sehingga siswa belajar melalui misi investigasi menggunakan Excel.
-                </p>
-            </div>
 
-            <!-- Hasil -->
-            <div class="card glass" style="padding:24px;border-top:6px solid #10B981;">
-            <div style="font-size:36px;">🧩</div>
-            <h3 style="margin:12px 0;color:#059669;">Hasil</h3>
+            <span style="
+                display:inline-block;
+                background:rgba(255,255,255,.18);
+                padding:8px 18px;
+                border-radius:999px;
+                font-size:14px;
+                margin-bottom:18px;
+            ">
+                Media Pembelajaran Berbasis Gamifikasi
+            </span>
 
-            <div style="line-height:1.8;">
 
-                <p>
-                    <strong>1. Meningkatkan keaktifan siswa</strong><br>
-                    Skenario investigatif <em>Game Detektif Data</em> yang memberi siswa
-                    kendali atas langkah penyelidikannya sendiri serta umpan balik poin secara
-                    langsung mendorong motivasi dan keterlibatan aktif siswa selama pembelajaran.
-                </p>
+            <h1 style="
+                font-size:2.2rem;
+                margin-bottom:14px;
+                line-height:1.3;
+            ">
+                DETEKTIF DATA
+                <br>
+                Kasus Nilai Misterius
+            </h1>
 
-                <p>
-                    <strong>2. Mengubah pembelajaran yang didominasi ceramah</strong><br>
-                    Kelas eksperimen yang menggunakan <em>Game Detektif Data</em> memperoleh
-                    peningkatan hasil belajar yang signifikan (Wilcoxon, Asymp. Sig. &lt; 0,001),
-                    sedangkan kelas kontrol dengan metode ceramah juga mengalami peningkatan
-                    (Sig. = 0,002). Uji Mann–Whitney menunjukkan perbedaan hasil posttest yang
-                    signifikan antara kedua kelas (Asymp. Sig. 2-tailed = 0,031).
-                </p>
 
-                <p>
-                    <strong>3. Membantu siswa menganalisis kesalahan data</strong><br>
-                    Melalui skenario kasus investigasi, siswa dilatih menggunakan fitur
-                    <em>Sort, Filter, SUM,</em> dan <em>IF</em> untuk menemukan pola serta
-                    petunjuk pada data. Pendekatan ini mengubah konsep pengolahan data yang
-                    abstrak menjadi tahapan yang lebih konkret dan mudah dipahami.
-                </p>
+            <p style="
+                max-width:700px;
+                line-height:1.8;
+                opacity:.95;
+            ">
+                Sebuah media pembelajaran gamifikasi untuk materi Microsoft Excel
+                yang mengajak siswa menjadi tim detektif dalam menemukan kesalahan
+                data menggunakan fungsi
+                <b>SUM</b>,
+                <b>AVERAGE</b>,
+                <b>SORTING</b>,
+                dan
+                <b>FILTERING</b>.
+            </p>
 
-                <p>
-                    <strong>4. Mengoptimalkan hasil belajar</strong><br>
-                    Rata-rata posttest kelas eksperimen mencapai <strong>90,00</strong>
-                    (SD 9,097), lebih tinggi dan lebih merata dibandingkan kelas kontrol
-                    sebesar <strong>82,00</strong> (SD 15,844). Nilai minimum kelas eksperimen
-                    juga mencapai <strong>70</strong>, sedangkan kelas kontrol sebesar
-                    <strong>30</strong>.
-                </p>
+        </section>
 
-                <div style="margin-top:20px;padding:16px;background:#ECFDF5;border-radius:12px;">
-                    <strong style="color:#059669;">🏆 Peringkat Hasil Belajar</strong>
 
-                    <ol style="margin:12px 0 0 20px;padding:0;">
-                        <li>
-                            <strong>Kelas Eksperimen</strong> — Rata-rata posttest: 
-                            <strong>90,00</strong>
-                        </li>
-                        <li>
-                            <strong>Kelas Kontrol</strong> — Rata-rata posttest: 
-                            <strong>82,00</strong>
-                        </li>
-                    </ol>
 
-                    <p style="margin-top:12px;">
-                        Berdasarkan rata-rata posttest, kelas eksperimen memperoleh hasil
-                        yang lebih tinggi dibandingkan kelas kontrol setelah penerapan
-                        <em>Game Detektif Data</em>.
-                    </p>
+        <!-- =====================================
+             LATAR BELAKANG
+        ====================================== -->
+
+        <section class="innovation-section">
+
+            <h2 class="page-title"
+                style="
+                    text-align:center;
+                    margin-bottom:12px;
+                ">
+                Latar Belakang Pengembangan Media
+            </h2>
+
+
+            <p class="innovation-intro">
+                Pengembangan <b>Game Detektif Data</b> dirancang untuk menjawab
+                permasalahan pembelajaran Microsoft Excel sekaligus meningkatkan
+                keterlibatan dan hasil belajar siswa.
+            </p>
+
+
+            <!-- =================================
+                 PERMASALAHAN + INOVASI
+            ================================== -->
+
+            <div class="innovation-top-grid"
+                style="
+                    display:grid;
+                    grid-template-columns:repeat(2,minmax(0,1fr));
+                    gap:22px;
+                    margin-bottom:22px;
+                ">
+
+
+                <!-- PERMASALAHAN -->
+
+                <div class="card glass innovation-card problem-card">
+
+                    <div class="innovation-header">
+
+                        <div class="innovation-icon problem-icon">
+                            <i class="fas fa-triangle-exclamation"></i>
+                        </div>
+
+                        <div>
+                            <span class="innovation-label">
+                                IDENTIFIKASI
+                            </span>
+
+                            <h3>
+                                Permasalahan
+                            </h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="innovation-list">
+
+                        <div class="innovation-item">
+                            <span class="item-number problem-number">
+                                01
+                            </span>
+
+                            <p>
+                                Siswa masih pasif saat belajar Excel.
+                            </p>
+                        </div>
+
+
+                        <div class="innovation-item">
+                            <span class="item-number problem-number">
+                                02
+                            </span>
+
+                            <p>
+                                Pembelajaran masih didominasi metode ceramah.
+                            </p>
+                        </div>
+
+
+                        <div class="innovation-item">
+                            <span class="item-number problem-number">
+                                03
+                            </span>
+
+                            <p>
+                                Siswa mengalami kesulitan dalam menganalisis
+                                kesalahan data.
+                            </p>
+                        </div>
+
+
+                        <div class="innovation-item">
+                            <span class="item-number problem-number">
+                                04
+                            </span>
+
+                            <p>
+                                Hasil belajar siswa belum optimal.
+                            </p>
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <p style="margin-top:16px;">
-                    <strong>5. Ukuran efek</strong><br>
-                    Ukuran efek peningkatan pretest–posttest tergolong besar pada kelas
-                    eksperimen (<strong>r = 0,63</strong>) maupun kelas kontrol
-                    (<strong>r = 0,55</strong>), sedangkan perbedaan antar kelompok memiliki
-                    ukuran efek <strong>r = 0,28</strong> yang berada pada kategori kecil–menengah.
+
+
+                <!-- INOVASI -->
+
+                <div class="card glass innovation-card innovation-main">
+
+                    <div class="innovation-header">
+
+                        <div class="innovation-icon innovation-icon-main">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+
+                        <div>
+                            <span class="innovation-label">
+                                GAGASAN
+                            </span>
+
+                            <h3>
+                                Inovasi
+                            </h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="innovation-highlight">
+
+                        <div class="innovation-mini-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Game Detektif Data
+                            </strong>
+
+                            <p>
+                                Media pembelajaran berbasis gamifikasi yang
+                                menghadirkan studi kasus manipulasi nilai sehingga
+                                siswa belajar melalui misi investigasi menggunakan
+                                Microsoft Excel.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="innovation-tags">
+
+                        <span>
+                            <i class="fas fa-calculator"></i>
+                            SUM
+                        </span>
+
+                        <span>
+                            <i class="fas fa-chart-column"></i>
+                            AVERAGE
+                        </span>
+
+                        <span>
+                            <i class="fas fa-arrow-down-a-z"></i>
+                            SORTING
+                        </span>
+
+                        <span>
+                            <i class="fas fa-filter"></i>
+                            FILTERING
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 HASIL
+            ================================== -->
+
+            <div class="card glass innovation-card result-card"
+                style="margin-bottom:22px;">
+
+
+                <div class="innovation-header">
+
+                    <div class="innovation-icon result-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="innovation-label">
+                            HASIL IMPLEMENTASI
+                        </span>
+
+                        <h3>
+                            Hasil
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="result-grid">
+
+
+                    <!-- HASIL 1 -->
+
+                    <div class="result-box">
+
+                        <div class="result-box-header">
+
+                            <span class="result-number">
+                                01
+                            </span>
+
+                            <h4>
+                                Meningkatkan Keaktifan Siswa
+                            </h4>
+
+                        </div>
+
+                        <p>
+                            Skenario investigatif
+                            <em>Game Detektif Data</em>
+                            yang memberi siswa kendali atas langkah
+                            penyelidikannya sendiri serta umpan balik poin secara
+                            langsung mendorong motivasi dan keterlibatan aktif
+                            siswa selama pembelajaran.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- HASIL 2 -->
+
+                    <div class="result-box">
+
+                        <div class="result-box-header">
+
+                            <span class="result-number">
+                                02
+                            </span>
+
+                            <h4>
+                                Mengubah Pembelajaran yang Didominasi Ceramah
+                            </h4>
+
+                        </div>
+
+                        <p>
+                            Kelas eksperimen yang menggunakan
+                            <em>Game Detektif Data</em>
+                            memperoleh peningkatan hasil belajar yang signifikan
+                            (<strong>Wilcoxon, Asymp. Sig. &lt; 0,001</strong>),
+                            sedangkan kelas kontrol dengan metode ceramah juga
+                            mengalami peningkatan
+                            (<strong>Sig. = 0,002</strong>).
+                        </p>
+
+                        <div class="result-stat">
+                            <i class="fas fa-arrow-trend-up"></i>
+                            Mann–Whitney:
+                            <strong>0,031</strong>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- HASIL 3 -->
+
+                    <div class="result-box">
+
+                        <div class="result-box-header">
+
+                            <span class="result-number">
+                                03
+                            </span>
+
+                            <h4>
+                                Membantu Siswa Menganalisis Kesalahan Data
+                            </h4>
+
+                        </div>
+
+                        <p>
+                            Melalui skenario kasus investigasi, siswa dilatih
+                            menggunakan
+                            <em>Sort, Filter, SUM,</em>
+                            dan
+                            <em>IF</em>
+                            untuk menemukan pola serta petunjuk pada data.
+                            Pendekatan ini mengubah konsep pengolahan data yang
+                            abstrak menjadi tahapan yang lebih konkret dan mudah
+                            dipahami.
+                        </p>
+
+                        <div class="result-stat">
+                            <i class="fas fa-magnifying-glass"></i>
+                            Pembelajaran lebih konkret
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- HASIL 4 -->
+
+                    <div class="result-box">
+
+                        <div class="result-box-header">
+
+                            <span class="result-number">
+                                04
+                            </span>
+
+                            <h4>
+                                Mengoptimalkan Hasil Belajar
+                            </h4>
+
+                        </div>
+
+
+                        <div class="score-comparison">
+
+                            <div>
+
+                                <span>
+                                    Kelas Eksperimen
+                                </span>
+
+                                <strong>
+                                    90,00
+                                </strong>
+
+                                <small>
+                                    SD 9,097 · Min 70
+                                </small>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Kelas Kontrol
+                                </span>
+
+                                <strong>
+                                    82,00
+                                </strong>
+
+                                <small>
+                                    SD 15,844 · Min 30
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     PERINGKAT
+                ================================== -->
+
+                <div class="ranking-box">
+
+                    <div class="ranking-title">
+
+                        <i class="fas fa-trophy"></i>
+
+                        <strong>
+                            Peringkat Hasil Belajar
+                        </strong>
+
+                    </div>
+
+
+                    <div class="ranking-grid">
+
+
+                        <div class="ranking-item">
+
+                            <span>
+                                01
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Kelas Eksperimen
+                                </strong>
+
+                                <small>
+                                    Rata-rata posttest
+                                </small>
+
+                            </div>
+
+                            <b>
+                                90,00
+                            </b>
+
+                        </div>
+
+
+                        <div class="ranking-item">
+
+                            <span>
+                                02
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Kelas Kontrol
+                                </strong>
+
+                                <small>
+                                    Rata-rata posttest
+                                </small>
+
+                            </div>
+
+                            <b>
+                                82,00
+                            </b>
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="ranking-description">
+
+                        Berdasarkan rata-rata posttest, kelas eksperimen memperoleh
+                        hasil yang lebih tinggi dibandingkan kelas kontrol setelah
+                        penerapan
+                        <em>Game Detektif Data</em>.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- =================================
+                     EFFECT SIZE
+                ================================== -->
+
+                <div class="effect-box">
+
+                    <div class="effect-icon">
+                        <i class="fas fa-chart-simple"></i>
+                    </div>
+
+
+                    <div class="effect-content">
+
+                        <strong>
+                            05. Ukuran Efek
+                        </strong>
+
+                        <p>
+                            Ukuran efek peningkatan pretest–posttest tergolong
+                            besar pada kelas eksperimen
+                            (<strong>r = 0,63</strong>)
+                            maupun kelas kontrol
+                            (<strong>r = 0,55</strong>),
+                            sedangkan perbedaan antar kelompok memiliki ukuran
+                            efek
+                            <strong>r = 0,28</strong>
+                            yang berada pada kategori kecil–menengah.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================
+     PENGALAMAN BERHARGA
+================================== -->
+
+<div class="card glass innovation-card experience-card">
+
+    <div class="innovation-header">
+
+        <div class="innovation-icon experience-icon">
+            <i class="fas fa-star"></i>
+        </div>
+
+        <div>
+            <span class="innovation-label">
+                REFLEKSI PENGALAMAN
+            </span>
+
+            <h3>
+                Pengalaman Berharga
+            </h3>
+        </div>
+
+            </div>
+
+
+            <div class="experience-grid">
+
+                <!-- 01 -->
+                <div class="experience-item">
+
+                    <span class="experience-number">
+                        01
+                    </span>
+
+                    <div>
+                        <strong>
+                            Belajar dari Keaktifan Siswa
+                        </strong>
+
+                        <p>
+                            Saya belajar bahwa pembelajaran akan lebih bermakna ketika
+                            siswa tidak hanya menerima penjelasan, tetapi terlibat
+                            langsung dalam menyelesaikan masalah. Skenario investigasi
+                            dalam <em>Game Detektif Data</em> memberikan pengalaman bagi
+                            siswa untuk mencari petunjuk, menganalisis data, dan
+                            mengambil keputusan berdasarkan hasil temuannya.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- 02 -->
+                <div class="experience-item">
+
+                    <span class="experience-number">
+                        02
+                    </span>
+
+                    <div>
+                        <strong>
+                            Memahami Pentingnya Media yang Interaktif
+                        </strong>
+
+                        <p>
+                            Pengembangan media ini memberikan pengalaman bahwa media
+                            pembelajaran tidak cukup hanya menarik secara visual.
+                            Media perlu memberikan aktivitas, tantangan, dan umpan balik
+                            agar siswa terdorong untuk berpikir, mencoba, dan terlibat
+                            secara aktif dalam proses belajar.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- 03 -->
+                <div class="experience-item">
+
+                    <span class="experience-number">
+                        03
+                    </span>
+
+                    <div>
+                        <strong>
+                            Belajar Menggunakan Data untuk Mengevaluasi Pembelajaran
+                        </strong>
+
+                        <p>
+                            Hasil pretest dan posttest memberikan pengalaman bahwa
+                            keberhasilan sebuah media pembelajaran perlu dilihat
+                            berdasarkan data. Perbandingan hasil belajar membantu saya
+                            memahami sejauh mana media yang dikembangkan memberikan
+                            perubahan terhadap proses dan hasil belajar siswa.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- 04 -->
+                <div class="experience-item">
+
+                    <span class="experience-number">
+                        04
+                    </span>
+
+                    <div>
+                        <strong>
+                            Mengembangkan Kemampuan sebagai Calon Guru
+                        </strong>
+
+                        <p>
+                            Proses pengembangan dan penerapan <em>Game Detektif Data</em>
+                            menjadi pengalaman berharga dalam melatih kemampuan saya
+                            untuk merancang pembelajaran, mengembangkan media,
+                            mengamati respons siswa, serta melakukan refleksi berdasarkan
+                            hasil pelaksanaan pembelajaran.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- REFLEKSI PENUTUP -->
+
+            <div class="experience-reflection">
+
+                <i class="fas fa-quote-left"></i>
+
+                <p>
+                    Pengalaman ini mengajarkan saya bahwa inovasi dalam pembelajaran
+                    bukan hanya tentang menciptakan media yang menarik, tetapi tentang
+                    bagaimana media tersebut mampu membuat siswa <strong>aktif,
+                    berpikir, mencoba, dan belajar dari prosesnya</strong>.
                 </p>
 
             </div>
+
         </div>
 
-            <!-- Tindak lanjut -->
-            <div class="card glass" style="padding:24px;border-top:6px solid #2563EB;">
-                <div style="font-size:36px;">📈</div>
-                <h3 style="margin:12px 0;color:#2563EB;">Tindak Lanjut</h3>
-                <ul style="padding-left:18px;line-height:1.8;">
-                    <li>Mengembangkan variasi level Game Detektif Data untuk materi analisis data lainnya</li>
-                    <li>Mengujicobakan media pada kelas lain</li>
-                    <li>Menjadikan game detektif data menjadi media digital</li>
-                    <li></li>
-                </ul>
+
+            <!-- =================================
+                 TINDAK LANJUT
+            ================================== -->
+
+            <div class="card glass innovation-card followup-card">
+
+                <div class="innovation-header">
+
+                    <div class="innovation-icon followup-icon">
+                        <i class="fas fa-arrow-trend-up"></i>
+                    </div>
+
+                    <div>
+
+                        <span class="innovation-label">
+                            PENGEMBANGAN BERKELANJUTAN
+                        </span>
+
+                        <h3>
+                            Tindak Lanjut
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="followup-grid">
+
+
+                    <div class="followup-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Variasi Level
+                            </strong>
+
+                            <p>
+                                Mengembangkan variasi level Game Detektif Data
+                                untuk materi analisis data lainnya.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="followup-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Uji Coba Lebih Luas
+                            </strong>
+
+                            <p>
+                                Mengujicobakan media pada kelas lain untuk melihat
+                                penerapan pada karakteristik siswa yang berbeda.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="followup-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Media Digital
+                            </strong>
+
+                            <p>
+                                Menjadikan Game Detektif Data sebagai media
+                                pembelajaran digital yang lebih interaktif.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-        </div>
-    </section>
+        </section>
 
 
-    <!-- TIMELINE MISI -->
-    <section style="margin-top:60px;">
 
-        <div style="text-align:center;margin-bottom:35px;">
-            <h2 class="page-title">🕵️ Lima Misi Detektif Data</h2>
-            <p style="max-width:700px;margin:auto;line-height:1.8;">
-                Setiap kelompok menyelesaikan misi secara berurutan. Misi berikutnya hanya dapat
-                dibuka apabila misi sebelumnya berhasil diselesaikan.
+        <!-- =====================================
+             LIMA MISI DETEKTIF DATA
+        ====================================== -->
+
+        <section style="margin-top:60px;">
+
+            <div style="
+                text-align:center;
+                margin-bottom:35px;
+            ">
+
+                <h2 class="page-title">
+                    🕵️ Lima Misi Detektif Data
+                </h2>
+
+                <p style="
+                    max-width:700px;
+                    margin:auto;
+                    line-height:1.8;
+                ">
+                    Setiap kelompok menyelesaikan misi secara berurutan.
+                    Misi berikutnya hanya dapat dibuka apabila misi sebelumnya
+                    berhasil diselesaikan.
+                </p>
+
+            </div>
+
+
+
+            <!-- MISI 1 -->
+
+            <div class="card glass mission-card">
+
+                <img
+                    src="https://drive.google.com/thumbnail?id=1dv5oxR1JLLu7HPJgmvFdnJOLRju7J0H1&sz=w1000"
+                    alt="Misi 1">
+
+                <div class="mission-content">
+
+                    <span class="mission-level"
+                        style="
+                            background:#DBEAFE;
+                            color:#1D4ED8;
+                        ">
+                        LEVEL 1
+                    </span>
+
+                    <h3>
+                        Misi 1 — SUM
+                    </h3>
+
+                    <p>
+                        Menghitung total nilai seluruh siswa menggunakan fungsi
+                        SUM, kemudian menemukan data yang memiliki nilai tidak
+                        wajar sebagai bukti awal investigasi.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MISI 2 -->
+
+            <div class="card glass mission-card">
+
+                <img
+                    src="https://drive.google.com/thumbnail?id=1HsDEuxGYipCOorYCSziKa0k1uk1FkBpp&sz=w1000"
+                    alt="Misi 2">
+
+                <div class="mission-content">
+
+                    <span class="mission-level"
+                        style="
+                            background:#D1FAE5;
+                            color:#047857;
+                        ">
+                        LEVEL 2
+                    </span>
+
+                    <h3>
+                        Misi 2 — AVERAGE
+                    </h3>
+
+                    <p>
+                        Menghitung rata-rata nilai setiap siswa dan menganalisis
+                        apakah terdapat rata-rata yang terlalu tinggi atau terlalu
+                        rendah akibat kesalahan data.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MISI 3 -->
+
+            <div class="card glass mission-card">
+
+                <img
+                    src="https://drive.google.com/thumbnail?id=1ilKijitsge_h1wTd6IWuF-VabscgSxRI&sz=w1000"
+                    alt="Misi 3">
+
+                <div class="mission-content">
+
+                    <span class="mission-level"
+                        style="
+                            background:#DBEAFE;
+                            color:#1D4ED8;
+                        ">
+                        LEVEL 3
+                    </span>
+
+                    <h3>
+                        Misi 3 — SORTING
+                    </h3>
+
+                    <p>
+                        Mengurutkan data berdasarkan nilai rata-rata tertinggi
+                        hingga terendah, lalu mengidentifikasi posisi siswa yang
+                        terlihat mencurigakan.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MISI 4 -->
+
+            <div class="card glass mission-card">
+
+                <img
+                    src="https://drive.google.com/thumbnail?id=1LRqBFGWxkFVFnLmxyO5fZ8JUuXuqBTPg&sz=w1000"
+                    alt="Misi 4">
+
+                <div class="mission-content">
+
+                    <span class="mission-level"
+                        style="
+                            background:#E0F2FE;
+                            color:#0369A1;
+                        ">
+                        LEVEL 4
+                    </span>
+
+                    <h3>
+                        Misi 4 — FILTERING
+                    </h3>
+
+                    <p>
+                        Menampilkan hanya siswa dengan nilai ≥ 80 menggunakan
+                        fitur Filtering, kemudian memastikan tidak ada data yang
+                        lolos karena kesalahan input.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MISI 5 -->
+
+            <div class="card glass mission-card">
+
+                <img
+                    src="https://drive.google.com/thumbnail?id=1ApqxE5u8Ly_DOUemdOzXaxMHNyp11wkL&sz=w1000"
+                    alt="Misi 5">
+
+                <div class="mission-content">
+
+                    <span class="mission-level"
+                        style="
+                            background:#FEE2E2;
+                            color:#991B1B;
+                        ">
+                        FINAL MISSION
+                    </span>
+
+                    <h3>
+                        Siapa Pelaku Manipulasi Data?
+                    </h3>
+
+                    <p>
+                        Siswa menggabungkan hasil SUM, AVERAGE, SORTING, dan
+                        FILTERING untuk menemukan data yang dimanipulasi serta
+                        memberikan alasan berdasarkan bukti.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             TUJUAN PEMBELAJARAN
+        ====================================== -->
+
+        <section class="card glass"
+            style="
+                margin-top:50px;
+                padding:35px;
+                text-align:center;
+                background:linear-gradient(
+                    135deg,
+                    #EFF6FF,
+                    #DBEAFE
+                );
+                border-radius:24px;
+            ">
+
+            <h2 style="
+                color:#1D4ED8;
+                margin-bottom:15px;
+            ">
+                🎯 Tujuan Pembelajaran
+            </h2>
+
+            <p style="
+                max-width:760px;
+                margin:auto;
+                line-height:1.9;
+            ">
+                Melalui media gamifikasi
+                <b>Detektif Data</b>,
+                siswa tidak hanya menghafal rumus Excel,
+                tetapi juga mampu berpikir kritis,
+                menganalisis kesalahan data,
+                bekerja sama dalam tim,
+                serta menyelesaikan masalah nyata menggunakan
+                Microsoft Excel.
             </p>
-        </div>
 
-        <!-- Misi 1 -->
-        <div class="card glass" style="display:flex;gap:25px;align-items:center;flex-wrap:wrap;margin-bottom:25px;padding:24px;">
-            <img src="https://drive.google.com/thumbnail?id=1dv5oxR1JLLu7HPJgmvFdnJOLRju7J0H1&sz=w1000" alt="Misi 1" style="width:280px;border-radius:18px;">
-            <div style="flex:1;">
-                <span style="background:#DBEAFE;color:#1D4ED8;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;">
-                    LEVEL 1
-                </span>
-                <h3 style="margin:14px 0;">Misi 1 — SUM</h3>
-                <p style="line-height:1.8;">
-                    Menghitung total nilai seluruh siswa menggunakan fungsi SUM, kemudian
-                    menemukan data yang memiliki nilai tidak wajar sebagai bukti awal investigasi.
-                </p>
-            </div>
-        </div>
+        </section>
 
-        <!-- Misi 2 -->
-        <div class="card glass" style="display:flex;gap:25px;align-items:center;flex-wrap:wrap;margin-bottom:25px;padding:24px;">
-            <img src="https://drive.google.com/thumbnail?id=1HsDEuxGYipCOorYCSziKa0k1uk1FkBpp&sz=w1000" alt="Misi 1" style="width:280px;border-radius:18px;">
-            <div style="flex:1;">
-                <span style="background:#D1FAE5;color:#047857;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;">
-                    LEVEL 2
-                </span>
-                <h3 style="margin:14px 0;">Misi 2 — AVERAGE</h3>
-                <p style="line-height:1.8;">
-                    Menghitung rata-rata nilai setiap siswa dan menganalisis apakah terdapat
-                    rata-rata yang terlalu tinggi atau terlalu rendah akibat kesalahan data.
-                </p>
-            </div>
-        </div>
-
-        <!-- Misi 3 -->
-        <div class="card glass" style="display:flex;gap:25px;align-items:center;flex-wrap:wrap;margin-bottom:25px;padding:24px;">
-            <img src="https://drive.google.com/thumbnail?id=1ilKijitsge_h1wTd6IWuF-VabscgSxRI&sz=w1000" alt="Misi 1" style="width:280px;border-radius:18px;">
-            <div style="flex:1;">
-                <span style="background:#EDE9FE;color:#6D28D9;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;">
-                    LEVEL 3
-                </span>
-                <h3 style="margin:14px 0;">Misi 3 — SORTING</h3>
-                <p style="line-height:1.8;">
-                    Mengurutkan data berdasarkan nilai rata-rata tertinggi hingga terendah,
-                    lalu mengidentifikasi posisi siswa yang terlihat mencurigakan.
-                </p>
-            </div>
-        </div>
-
-        <!-- Misi 4 -->
-        <div class="card glass" style="display:flex;gap:25px;align-items:center;flex-wrap:wrap;margin-bottom:25px;padding:24px;">
-            <img src="https://drive.google.com/thumbnail?id=1LRqBFGWxkFVFnLmxyO5fZ8JUuXuqBTPg&sz=w1000" alt="Misi 1" style="width:280px;border-radius:18px;">
-            <div style="flex:1;">
-                <span style="background:#FDE68A;color:#92400E;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;">
-                    LEVEL 4
-                </span>
-                <h3 style="margin:14px 0;">Misi 4 — FILTERING</h3>
-                <p style="line-height:1.8;">
-                    Menampilkan hanya siswa dengan nilai ≥ 80 menggunakan fitur Filtering,
-                    kemudian memastikan tidak ada data yang lolos karena kesalahan input.
-                </p>
-            </div>
-        </div>
-
-        <!-- Misi 5 -->
-        <div class="card glass" style="display:flex;gap:25px;align-items:center;flex-wrap:wrap;padding:24px;">
-            <img src="https://drive.google.com/thumbnail?id=1ApqxE5u8Ly_DOUemdOzXaxMHNyp11wkL&sz=w1000" alt="Misi 1" style="width:280px;border-radius:18px;">
-            <div style="flex:1;">
-                <span style="background:#FECACA;color:#991B1B;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;">
-                    FINAL MISSION
-                </span>
-                <h3 style="margin:14px 0;">Siapa Pelaku Manipulasi Data?</h3>
-                <p style="line-height:1.8;">
-                    Siswa menggabungkan hasil SUM, AVERAGE, SORTING, dan FILTERING untuk
-                    menemukan data yang dimanipulasi serta memberikan alasan berdasarkan bukti.
-                </p>
-            </div>
-        </div>
-
-    </section>
+    </main>
 
 
-    <!-- PENUTUP -->
-    <section class="card glass" style="
-        margin-top:50px;
-        padding:35px;
-        text-align:center;
-        background:linear-gradient(135deg,#EFF6FF,#DBEAFE);
-        border-radius:24px;
-    ">
-        <h2 style="color:#1D4ED8;margin-bottom:15px;">
-            🎯 Tujuan Pembelajaran
-        </h2>
 
-        <p style="max-width:760px;margin:auto;line-height:1.9;">
-            Melalui media gamifikasi <b>Detektif Data</b>, siswa tidak hanya menghafal rumus Excel,
-            tetapi juga mampu berpikir kritis, menganalisis kesalahan data, bekerja sama dalam tim,
-            serta menyelesaikan masalah nyata menggunakan Microsoft Excel.
-        </p>
-    </section>
-
-</main>
+    <!-- =====================================
+         LIGHTBOX
+    ====================================== -->
 
     <div id="lightbox" class="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <img class="lightbox-content" id="lightbox-img" alt="Enlarged view">
+
+        <span class="lightbox-close">
+            &times;
+        </span>
+
+        <img
+            class="lightbox-content"
+            id="lightbox-img"
+            alt="Enlarged view">
+
         <div id="lightbox-caption"></div>
+
     </div>
 
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
     <div id="footer-placeholder"></div>
-    <button id="back-to-top">&#8593;</button>
+
+
+    <!-- BACK TO TOP -->
+
+    <button id="back-to-top">
+        &#8593;
+    </button>
+
+
+    <!-- SCRIPT -->
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
