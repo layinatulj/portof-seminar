@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Infografis Kreatif | Portofolio</title>
+    <meta name="description" content="Portofolio karya inovasi Game Detektif Data untuk pembelajaran Microsoft Excel berbasis gamifikasi.">
+    <meta name="theme-color" content="#1D4ED8">
+    <title>Karya Inovasi — Game Detektif Data | Portofolio</title>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <link
-        rel="stylesheet"
-        href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
 
     <style>
 
@@ -710,6 +711,89 @@
 
         }
 
+
+
+        /* =====================================================
+           PERBAIKAN RESPONSIVE, AKSESIBILITAS, DAN KONSISTENSI
+        ===================================================== */
+        *, *::before, *::after { box-sizing: border-box; }
+        img { max-width: 100%; height: auto; }
+        .innovation-intro { padding-inline: 8px; }
+        .experience-card { margin-bottom: 22px; }
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+        }
+        .experience-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            min-width: 0;
+            padding: 16px;
+            border: 1px solid #E2E8F0;
+            border-radius: 15px;
+            background: rgba(248, 250, 252, .75);
+        }
+        .experience-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            flex: 0 0 30px;
+            border-radius: 9px;
+            background: #DBEAFE;
+            color: #1D4ED8;
+            font-size: .7rem;
+            font-weight: 700;
+        }
+        .experience-item strong { display: block; line-height: 1.5; }
+        .experience-item p { margin: 6px 0 0; font-size: .84rem; line-height: 1.75; }
+        .experience-reflection {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-top: 18px;
+            padding: 18px;
+            border-left: 4px solid #2563EB;
+            border-radius: 0 14px 14px 0;
+            background: #EFF6FF;
+            color: #1E3A8A;
+        }
+        .experience-reflection p { margin: 0; line-height: 1.8; }
+        .mission-card { min-width: 0; }
+        .mission-content { overflow-wrap: anywhere; }
+        .mission-card img { object-fit: cover; }
+        .innovation-card, .result-box, .ranking-box { min-width: 0; }
+        [data-theme="dark"] .experience-item {
+            background: rgba(15, 23, 42, .55);
+            border-color: rgba(255,255,255,.08);
+        }
+        [data-theme="dark"] .experience-reflection {
+            background: rgba(30, 64, 175, .16);
+            border-left-color: #60A5FA;
+            color: #DBEAFE;
+        }
+        @media (max-width: 700px) {
+            .experience-grid { grid-template-columns: 1fr; }
+            .innovation-section { margin-top: 30px; }
+            .innovation-intro { font-size: .92rem; }
+            .mission-card { align-items: stretch; }
+            .mission-content { min-width: 0; width: 100%; }
+            .result-box { padding: 15px; }
+            .ranking-item { min-width: 0; }
+            .ranking-item b { white-space: nowrap; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                scroll-behavior: auto !important;
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important;
+            }
+        }
+
     </style>
 
 </head>
@@ -849,7 +933,7 @@
                     <div class="innovation-header">
 
                         <div class="innovation-icon problem-icon">
-                            <i class="fas fa-triangle-exclamation"></i>
+                            <i class="fas fa-triangle-exclamation" aria-hidden="true"></i>
                         </div>
 
                         <div>
@@ -924,7 +1008,7 @@
                     <div class="innovation-header">
 
                         <div class="innovation-icon innovation-icon-main">
-                            <i class="fas fa-lightbulb"></i>
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
                         </div>
 
                         <div>
@@ -1073,9 +1157,8 @@
                         </div>
 
                         <p>
-                            Kelas eksperimen yang menggunakan
-                            <em>Game Detektif Data</em>
-                            memperoleh peningkatan hasil belajar yang signifikan
+                            Pada kelas eksperimen yang menggunakan
+                            <em>Game Detektif Data</em>, skor pretest–posttest menunjukkan peningkatan yang signifikan
                             (<strong>Wilcoxon, Asymp. Sig. &lt; 0,001</strong>),
                             sedangkan kelas kontrol dengan metode ceramah juga
                             mengalami peningkatan
@@ -1155,11 +1238,11 @@
                                 </span>
 
                                 <strong>
-                                    90,00
+                                    89,67
                                 </strong>
 
                                 <small>
-                                    SD 9,097 · Min 70
+                                    SD 9,279 · Min 70
                                 </small>
 
                             </div>
@@ -1172,11 +1255,11 @@
                                 </span>
 
                                 <strong>
-                                    82,00
+                                    89,00
                                 </strong>
 
                                 <small>
-                                    SD 15,844 · Min 30
+                                    SD 17,090 · Min 30
                                 </small>
 
                             </div>
@@ -1228,7 +1311,7 @@
                             </div>
 
                             <b>
-                                90,00
+                                89,67
                             </b>
 
                         </div>
@@ -1253,7 +1336,7 @@
                             </div>
 
                             <b>
-                                82,00
+                                89,00
                             </b>
 
                         </div>
@@ -1263,10 +1346,7 @@
 
                     <p class="ranking-description">
 
-                        Berdasarkan rata-rata posttest, kelas eksperimen memperoleh
-                        hasil yang lebih tinggi dibandingkan kelas kontrol setelah
-                        penerapan
-                        <em>Game Detektif Data</em>.
+                        Berdasarkan data posttest yang dicatat, rata-rata kelas eksperimen (89,67) sedikit lebih tinggi daripada kelas kontrol (89,00). Uji Mann–Whitney menunjukkan perbedaan antarkelompok yang signifikan secara statistik (p = 0,031).
 
                     </p>
 
@@ -1592,7 +1672,7 @@
 
                 <img
                     src="https://drive.google.com/thumbnail?id=1dv5oxR1JLLu7HPJgmvFdnJOLRju7J0H1&sz=w1000"
-                    alt="Misi 1">
+                    alt="Misi 1" loading="lazy" decoding="async">
 
                 <div class="mission-content">
 
@@ -1626,7 +1706,7 @@
 
                 <img
                     src="https://drive.google.com/thumbnail?id=1HsDEuxGYipCOorYCSziKa0k1uk1FkBpp&sz=w1000"
-                    alt="Misi 2">
+                    alt="Misi 2" loading="lazy" decoding="async">
 
                 <div class="mission-content">
 
@@ -1660,7 +1740,7 @@
 
                 <img
                     src="https://drive.google.com/thumbnail?id=1ilKijitsge_h1wTd6IWuF-VabscgSxRI&sz=w1000"
-                    alt="Misi 3">
+                    alt="Misi 3" loading="lazy" decoding="async">
 
                 <div class="mission-content">
 
@@ -1694,7 +1774,7 @@
 
                 <img
                     src="https://drive.google.com/thumbnail?id=1LRqBFGWxkFVFnLmxyO5fZ8JUuXuqBTPg&sz=w1000"
-                    alt="Misi 4">
+                    alt="Misi 4" loading="lazy" decoding="async">
 
                 <div class="mission-content">
 
@@ -1728,7 +1808,7 @@
 
                 <img
                     src="https://drive.google.com/thumbnail?id=1ApqxE5u8Ly_DOUemdOzXaxMHNyp11wkL&sz=w1000"
-                    alt="Misi 5">
+                    alt="Misi 5" loading="lazy" decoding="async">
 
                 <div class="mission-content">
 
@@ -1833,7 +1913,7 @@
 
     <!-- BACK TO TOP -->
 
-    <button id="back-to-top">
+    <button id="back-to-top" type="button" aria-label="Kembali ke atas">
         &#8593;
     </button>
 
