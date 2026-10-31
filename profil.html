@@ -1,42 +1,370 @@
+
 <!DOCTYPE html>
 <html lang="id" data-page="profil">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Saya | Portofolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Profil | Portofolio Mahasiswa PPG Calon Guru Informatika</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    <div id="loader"><div class="spinner"></div></div>
+
+    <!-- LOADER -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- NAVBAR -->
     <div id="navbar-placeholder"></div>
 
-    <main class="container fade-in-section page-padding">
-        <section class="profile-header card glass">
-            <div class="profile-avatar-wrapper">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIVigA5_6lYscef0gvyzg1aYraNyxUSvWmPJoAUG4RkhPQP6qq9zxA79eMVWrr4iJoLEGeOmTBdecjnlMQ0LcDE5ULLQtzvgwFIBHvnbTsv4wdHog9jbN4RzvlYLZe0mseU1LVoqhYhHr4zVqdqb7sClIgFlcxTZ1segsCoxLrgoUl_BaRhHoMyUaEKahK/s1350/Desain%20tanpa%20judul.png" alt="Foto Profil" class="profile-avatar" onerror="this.src='https://via.placeholder.com/150'">
+    <main class="container page-padding">
+
+        <!-- =========================
+             PROFIL HERO
+        ========================== -->
+        <section class="profile-hero">
+
+            <div class="profile-photo-wrapper">
+
+                <div class="profile-photo-bg"></div>
+
+                <!-- GANTI FOTO DI SINI -->
+                <img
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrvmDYCThDP2RLHq-4PBaHjsBOZfJ5NVWZqjLEGwYwpMhRYdWAtVdWcX04Uc99KZI5uKkXto6IqkaxCOkjgakRNyf10fxzfy03_0DYLbhuUf13iv3V1lyVXBsfJ9XakrPEC2h9qaLlLULXbcMk2NfNgrNBtnqRP2Cca_JAYmv48tmLfLObpjtIme4DQJHc/s1240/photo_6282918296965289023_y.jpg"
+                    alt="Foto Profil Layinatul Janibah"
+                    class="profile-photo"
+                >
+
+                <div class="photo-decoration decoration-one"></div>
+                <div class="photo-decoration decoration-two"></div>
+
+                <span class="photo-caption">
+                    Calon Guru Informatika
+                </span>
+
             </div>
-            <div class="profile-identity">
-                <h2>Layinatul Janibah</h2>
-                <p class="profile-tag">Mahasiswa</p>
-                <table class="profile-table">
-                    <tr><td><strong>NIM</strong></td><td>: 253153744026</td></tr>
-                    <tr><td><strong>Bidang Studi</strong></td><td>: Pendidikan Teknik Informatika</td></tr>
-                    <tr><td><strong>Universitas</strong></td><td>: Universitas Negeri Malang</td></tr>
-                    <tr><td><strong>Email</strong></td><td>: layinatul.janibah.2531537@students.um.ac.id</td></tr>
-                </table>
+
+            <div class="profile-content">
+
+                <span class="profile-label">
+                    <i class="fas fa-user-graduate"></i>
+                    PROFIL MAHASISWA PPG
+                </span>
+
+                <h1>Layinatul Janibah</h1>
+
+                <h3>
+                    Mahasiswa PPG Calon Guru Informatika
+                </h3>
+
+                <p class="profile-description">
+                    Terus belajar, bertumbuh, dan berkontribusi
+                    dalam menciptakan pembelajaran Informatika
+                    yang kreatif, inovatif, dan bermakna.
+                </p>
+
+                <div class="profile-info">
+
+                    <div class="profile-info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+
+                        <div>
+                            <span>Status</span>
+                            <strong>Mahasiswa PPG</strong>
+                        </div>
+                    </div>
+
+                    <div class="profile-info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+
+                        <div>
+                            <span>Bidang Studi</span>
+                            <strong>Pendidikan Teknik Informatika</strong>
+                        </div>
+                    </div>
+
+                    <div class="profile-info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+
+                        <div>
+                            <span>Universitas</span>
+                            <strong>Universitas Negeri Malang</strong>
+                        </div>
+                    </div>
+
+                    <div class="profile-info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+
+                        <div>
+                            <span>Bidang Keahlian</span>
+                            <strong>Pendidikan dan Teknologi</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="profile-motto">
+                    <i class="fas fa-quote-left"></i>
+                    Terus Belajar, Menjadi Guru yang Menginspirasi
+                </div>
+
             </div>
+
         </section>
 
-        <section class="profile-about card glass margin-top">
-            <h3>Tentang Saya</h3>
-            <p>Saya adalah seorang mahasiswa Program Profesi Guru dengan Bidang Studi Pendidikan teknik Informatika di Universitas Negeri Malang.</p>
+
+        <!-- =========================
+             TENTANG SAYA
+        ========================== -->
+        <section class="about-profile">
+
+            <div class="about-content">
+
+                <span class="section-tag">
+                    MENGENAL LEBIH DEKAT
+                </span>
+
+                <h2>Tentang Saya</h2>
+
+                <div class="about-line"></div>
+
+                <p>
+                    Saya adalah seorang mahasiswa Program Profesi Guru
+                    dengan Bidang Studi Pendidikan Teknik Informatika
+                    di Universitas Negeri Malang. Saya memiliki
+                    ketertarikan dalam dunia pendidikan dan pemanfaatan
+                    teknologi untuk menciptakan pembelajaran yang
+                    kreatif, inovatif, serta bermakna bagi peserta didik.
+                </p>
+
+            </div>
+
+            <div class="about-illustration">
+
+                <div class="illustration-circle"></div>
+
+                <div class="illustration-icons">
+                    <div class="illustration-icon icon-laptop">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+
+                    <div class="illustration-icon icon-book">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+
+                    <div class="illustration-icon icon-cap">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                </div>
+
+                <span class="illustration-caption">
+                    Education & Technology
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LK 1 IDENTIFIKASI DIRI
+        ========================== -->
+        <section class="lk1-section">
+
+            <div class="lk1-header">
+
+
+                <h2>Identifikasi Diri</h2>
+
+                <p>
+                    Mengenali visi pribadi sebagai calon guru dan
+                    langkah nyata untuk mewujudkan pendidikan
+                    yang lebih baik.
+                </p>
+
+                <div class="lk1-header-line"></div>
+
+            </div>
+
+
+            <div class="lk1-card-container">
+
+                <!-- CARD 1 -->
+                <article class="lk1-card">
+
+                    <div class="lk1-card-top">
+
+                        <span class="lk1-number">01</span>
+
+                        <div class="lk1-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+
+                    </div>
+
+                    <span class="lk1-category">
+                        VISI PENDIDIKAN
+                    </span>
+
+                    <h3>
+                        Visi Pribadi untuk Pendidikan di Indonesia
+                    </h3>
+
+                    <p class="lk1-description">
+                        Visi saya terhadap Pendidikan di Indonesia
+                        adalah terciptanya pemerataan akses dan mutu
+                        pendidikan yang dapat dinikmati oleh setiap
+                        anak bangsa secara adil, tanpa terkendala
+                        oleh perbedaan kondisi ekonomi, status sosial,
+                        maupun letak geografis tempat tinggalnya.
+                        Lebih dari itu, saya berharap dunia pendidikan
+                        Indonesia dapat bergerak melampaui sekadar
+                        pencapaian nilai akademik, dengan turut
+                        menumbuhkan karakter, kemandirian, serta
+                        kemampuan berpikir kritis pada diri peserta
+                        didik, sehingga mereka benar-benar siap
+                        menghadapi berbagai tantangan zaman yang
+                        terus berkembang.
+                    </p>
+
+                </article>
+
+
+                <!-- CARD 2 -->
+                <article class="lk1-card">
+
+                    <div class="lk1-card-top">
+
+                        <span class="lk1-number">02</span>
+
+                        <div class="lk1-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+
+                    </div>
+
+                    <span class="lk1-category">
+                        VISI PROFESI
+                    </span>
+
+                    <h3>
+                        Visi Pribadi sebagai Calon Guru
+                    </h3>
+
+                    <p class="lk1-description">
+                        Sebagai calon guru, visi saya adalah menjadi
+                        pendidik yang menyenangkan, inspiratif, dan
+                        mampu menjadi teladan bagi peserta didik.
+                        Saya ingin tidak hanya menyampaikan materi
+                        pelajaran, tetapi juga membimbing siswa
+                        menemukan potensi diri mereka, menumbuhkan
+                        rasa percaya diri, serta menanamkan
+                        nilai-nilai kejujuran, empati, dan tanggung
+                        jawab dalam kehidupan sehari-hari.
+                    </p>
+
+                </article>
+
+
+                <!-- CARD 3 -->
+                <article class="lk1-card">
+
+                    <div class="lk1-card-top">
+
+                        <span class="lk1-number">03</span>
+
+                        <div class="lk1-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+
+                    </div>
+
+                    <span class="lk1-category">
+                        LANGKAH PENGEMBANGAN DIRI
+                    </span>
+
+                    <h3>
+                        Hal yang Dilakukan untuk Mencapai Visi
+                    </h3>
+
+                    <p class="lk1-description">
+                        Untuk mencapai visi tersebut, saya akan terus
+                        meningkatkan kompetensi diri melalui belajar
+                        sepanjang hayat, mengikuti pelatihan dan
+                        pengembangan profesi guru, serta aktif
+                        memperbarui metode pembelajaran agar sesuai
+                        dengan kebutuhan siswa di era digital.
+                        Saya juga akan membangun komunikasi yang baik
+                        dengan siswa, orang tua, dan sesama pendidik,
+                        serta berkontribusi dalam kegiatan sosial
+                        dan program literasi untuk mendukung
+                        pemerataan akses pendidikan di lingkungan
+                        sekitar.
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <!-- PENUTUP -->
+            <div class="lk1-footer">
+
+                <i class="fas fa-star"></i>
+
+                <div>
+                    <strong>
+                        Pendidikan Berkualitas, Masa Depan Lebih Baik
+                    </strong>
+
+                    <span>
+                        Menjadi pendidik yang terus belajar,
+                        bertumbuh, dan memberikan inspirasi.
+                    </span>
+                </div>
+
+            </div>
+
         </section>
 
     </main>
 
-    <div id="footer-placeholder"></div>
-    <button id="back-to-top">&#8593;</button>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- SCRIPT -->
     <script src="script.js"></script>
+
 </body>
 </html>
